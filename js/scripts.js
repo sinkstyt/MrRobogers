@@ -21,11 +21,34 @@ function mrRobogerSpeaks(input) {
     if (char == "1") {
       response = "Beep!";
       return response;
+    } else {
+      // parseInt(input);
+      // let responseArray = [];
+      // for (let i = 0; i < 3; i++) {
+      //   responseArray.push(" " + Math.floor(Math.random() * input));
+      // }
+      // return responseArray;
     }
   }
   return input;
 }
 
+function stillGoing(str) {
+  // str possibilities: "Boop!", "Beep!" "Won't you be my neighbor?", "4444", "5555", etc.
+  const checker = /[BW]/;
+  // return value of String.prototype.search(): The index of the first match between the regular expression and the given string, or -1 if no match was found.
+  if (str.search(checker) == "0") {
+    // console.log("stillGoing f(x) got into its .includes() block");
+    return str;
+  }
+  parseInt(str);
+  let responseArray = [];
+  for (let i = 0; i < 3; i++) {
+    responseArray.push(Math.floor(Math.random() * str));
+  }
+  const outputString = responseArray.join(" ");
+  return outputString;
+}
 
 // User Interface Logic
 $(document).ready(function() {
@@ -39,7 +62,8 @@ $(document).ready(function() {
     userInputsArray.push(" "+currentInput);
     // Determine what Mr. Rogober says (his response). AKA DO BUSINESS LOGIC
       // business logic calls:
-      const currentResponse = mrRobogerSpeaks(currentInput);
+      const currentResponse = stillGoing(mrRobogerSpeaks(currentInput));
+      
     // Push Mr. Rogober's currentResponse into allRogoberSaids array
     allRogoberSaids.push(" "+currentResponse);
     // Have "What you have entered:" and "What robot has responded:" fields populate to <span> element with class="output-group":
