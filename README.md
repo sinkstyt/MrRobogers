@@ -3,21 +3,24 @@
 ### By _**Tyler Sinks**_
 
 ### _This Project's Reason for Being and Description_
-_This project functions as a jumping off point to explore some of the work Tyler has begun in the realm of web development and software engineering_
-* Created October 16, 2020
-* Last major revision October 16, 2020
-* Hopes to flex some just-learned skills touched on in the first week of Epicodus's October 2020 cohort:
-* a cohort which runs from October 12, 2020 through April 30, 2021
-* the Epicodus program includes the following modules *(with start dates):*
+_This project functions as a testing ground for applying a few JavaScript devices like arrays and loops_
+* Created October 30, 2020
+* Last major revision happened on October 30, 2020
+* Hopes to take an input number from a user and return one of three possible responses:
+    1. "Beep!"
+    2. "Boop!"
+    3. "Won't you be my neighbor?"
+* See if you can discern Mr. Roboger's logic just by guessing and checking your input numbers.
+* For a giveaway hint, one might peek at the business and user-interface logic in the scripts.js file.
 ![A portion of a screenshot from the Epicodus website describing my particular cohort](img/EpicodusModules.png)
-* initially created in response to a project prompt to be ginned up completely solo and completely within a nine hour window on **"created date"**
+* initially created in response to a project prompt to be ginned up completely solo and completely within a nine hour window on **"30 October, 2020"**
 
 ## Setup/Installation Requirements
 
 **Software that this project requires:**
 1. a web browser
-2. a plain text editor, such as `Basic Text Editor` available for Windows devices, or developer-go-to text editors such as Sublime Text, Atom, VIM, or Visual Studio Code
-3. a command line (or "Terminal.app" on a Mac) program for entering git prompts as they are offered/suggested to be used verbatim from this README.md
+2. a plain text editor, such as `Basic Text Editor` available for Windows devices, or developer go-to text editors such as Sublime Text, Atom, VIM, or Visual Studio Code
+3. a command line (or "Terminal.app" on a Mac) program for entering git prompts
 4. No additional code libraries or dependencies need to be installed locally for you to experience this project in all its splendor.
     4a. Perhaps one should make sure that git is installed on one's machine, so as to be able to follow the git prompts for the command line interface below
 
@@ -53,10 +56,25 @@ _This project functions as a jumping off point to explore some of the work Tyler
     `code .`
     > this should launch a new window in VS Code open to the root folder of the directory. Of course some unique system or user profile settings may be pointint you to an error message at this point. For help on this, _Stick with it! We're almost there!_ please check out the documentation appropriate to this error/your text editor of choice's command prompts.
 
+## Specs
+
+Describe: mrRobogerSpeaks
+
+Test | Code | Expect
+------ | ------|----------
+It will say (return), "Beep!", if user input includes 1.        |        | mrRobogerSpeaks(1).toEqual("Beep!")
+It will say, "Boop!", if user input includes a 2.       |        | mrRobogersSpeaks(2).toEqual("Boop!")
+It will say, "Won't you be my neighbor?" if user input includes a 3.       |        | mrRobogerSpeaks(3).toEqual("Won't you be my neighbor?")  
+It prioritizes the third test above the previous two.       |        | mrRobogerSpeaks(123).toEqual("Won't you be my neighbor?")   
+It prioritizes the second test only above the first.    |      | mrRobogerSpeaks(12).toEqual("Boop!")     
+It will say back to the user all previous responses before also responding to the most recent input.    |      | mrRobogerSpeaks(000).toEqual(...{all previous responses}, {THIS_INPUT'S_RESPONSE})
+It will say three numbers from the range of numbers between 0 and the user-inputted number, selected at random, if no 1, 2, or 3, digits are included in the user input.  |      | mrRobogerSpeaks(75648007).toEqual( [ {RANDOM_NUMBER_WITHIN_RANGE}, {RANDOM_NUMBER_WITHIN_RANGE}, {RANDOM_NUMBER_WITHIN_RANGE} ] )
+
 ## Known Bugs
 
-_I am sure that some of the hypertext links will break within days if not hours_
-_Other than that, I just have reservations about how a few things are spaced around the page..._
+_I am sure that some of the hypertext links will break within days if not hours._
+_Other than that, I have grave misgivings generally about the overall clunkiness of the page..._
+_Furthermore, {**NONE**} of the specs written above were passing at time of first submission (about 4:45 PM Pacific Time, 30 October, 2020)_
 
 ## Support and Contact Details
 
@@ -65,9 +83,8 @@ _tyler.sinks@gmail.com_
 
 ## Technologies Used
 
-_html_
-_css_
-_and a few drops of Bootstrap for styling_
+_html, JavaScript, jQuery,_
+_css, Bootstrap_
 
 ### License
 
