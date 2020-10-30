@@ -3,6 +3,18 @@ let userInputsArray = [];
 let allRogoberSaids = [];
 
 function mrRobogerSpeaks(input) {
+  // if (typeof input !== "number") {
+  //  input = parseInt(input);
+  // }
+  let response;
+  // Look for a "1" in the input, NB: typeof input //--> string
+  // Use a loop to check all the characters of the string for first instance of "1"
+  for (const char of input) {
+    if (char == "1") {
+      response = "Beep!";
+      return response;
+    }
+  }
   return input;
 }
 
