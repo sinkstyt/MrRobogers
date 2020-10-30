@@ -10,6 +10,10 @@ function mrRobogerSpeaks(input) {
   // Look for a "1" in the input, NB: typeof input //--> string
   // Use a loop to check all the characters of the string for first instance of "1"
   for (const char of input) {
+    if (char == "2") {
+      response = "Boop!";
+      return response;
+    }
     if (char == "1") {
       response = "Beep!";
       return response;
