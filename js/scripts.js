@@ -7,27 +7,24 @@ function mrRobogerSpeaks(input) {
   //  input = parseInt(input);
   // }
   let response;
-  // Look for a "1" in the input, NB: typeof input //--> string
+  // typeof input //--> string
   // Use a loop to check all the characters of the string for first instance of "1"
   for (const char of input) {
     if (char == "3") {
       response = "Won't you be my neighbor?";
       return response;
     }
+  }
+  for (const char of input) {
     if (char == "2") {
       response = "Boop!";
       return response;
     }
+  }
+  for (const char of input) {
     if (char == "1") {
       response = "Beep!";
       return response;
-    } else {
-      // parseInt(input);
-      // let responseArray = [];
-      // for (let i = 0; i < 3; i++) {
-      //   responseArray.push(" " + Math.floor(Math.random() * input));
-      // }
-      // return responseArray;
     }
   }
   return input;
