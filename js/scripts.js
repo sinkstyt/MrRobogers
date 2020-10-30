@@ -24,7 +24,7 @@ $(document).ready(function() {
     // Push Mr. Rogober's currentResponse into allRogoberSaids array
     allRogoberSaids.push(currentResponse);
     // Have "What you have entered:" and "What robot has responded:" fields populate to <span> element with class="output-group":
-    
+
 
   });
 });
@@ -32,8 +32,9 @@ $(document).ready(function() {
 // What should happen when each of the four buttons gets clicked?...
 $(document).ready(function() {
   $("button.btn-primary").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Why hello there!</li>");
+    // This primary button's functionality is kind of already fleshed out in the UI master function above...
+    // $("ul#user").prepend("<li>Hello!</li>");
+    // $("ul#webpage").prepend("<li>Why hello there!</li>");
   });
 
   $("button[type='reset']").click(function() {
