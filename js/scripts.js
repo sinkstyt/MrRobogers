@@ -1,6 +1,9 @@
 // Business Logic
+let userInputsArray = [];
+let allRogoberSaids = [];
+
 function mrRobogerSpeaks(input) {
-  
+  return input;
 }
 
 
@@ -11,67 +14,42 @@ $(document).ready(function() {
     $("div#output").show();
     // grab the user's inputted number and store as a newly declared variable
     const currentInput = $("input").val();
-    // If this is FIRST CLICK on SUBMIT BUTTON: declare an empty array to hold all of user's inputs AND declare an empty array to hold Mr. Roboger's responses
-    if ($("button.btn-primary").data('counter') === 1) {
-      let userInputsArray = [];
-      let allRogoberSaids = [];
-    }
-    // Push current user input into allUsersInputs array and push Mr. Roboger's current response to allRobogerSaids array
-    userInputsArray.push(currentInput);
-    // Determine what Mr. Rogober says (his response). AKA DO BUSINESS LOGIC
-      // business logic(s)
-    const currentResponse = mrRobogerSpeaks(currentInput);
-    // Push Mr. Rogober's currentResponse into allRogoberSaids array
-    allRogoberSaids.push(currentResponse);
-    // Have "What you have entered:" and "What robot has responded:" fields populate to <span> element with class="output-group":
 
+    // Push current user input into allUsersInputs array and push Mr. Roboger's current response to allRobogerSaids array
+    userInputsArray.push(" "+currentInput);
+    // Determine what Mr. Rogober says (his response). AKA DO BUSINESS LOGIC
+      // business logic calls:
+      const currentResponse = mrRobogerSpeaks(currentInput);
+    // Push Mr. Rogober's currentResponse into allRogoberSaids array
+    allRogoberSaids.push(" "+currentResponse);
+    // Have "What you have entered:" and "What robot has responded:" fields populate to <span> element with class="output-group":
+    $("span.user-output").text(`What you have entered: ${userInputsArray}`);
+    $("span.robot-output").text(`What Mr. Roboger has said: ${allRogoberSaids}`);
 
   });
 });
 
-// What should happen when each of the four buttons gets clicked?...
+// What should happen when each of the four buttons gets clicked?
 $(document).ready(function() {
   $("button.btn-primary").click(function() {
+    $("span").show();
     // This primary button's functionality is kind of already fleshed out in the UI master function above...
-    // $("ul#user").prepend("<li>Hello!</li>");
-    // $("ul#webpage").prepend("<li>Why hello there!</li>");
   });
 
+// Reset button:  
   $("button[type='reset']").click(function() {
-    $("ul#user").prepend("<li>Goodbye!</li>");
-    $("ul#webpage").prepend("<li>Goodbye, dear user!</li>");
+    $("form")[0].reset();
+    $("input")[0].focus();
   });
 
+// button with text "show response history"
   $("button.btn-outline-primary").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
+    $("span").show();
   });
 
+// button with text "hide these outputs"
   $("button#hider-button").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>Pardon me. I meant no offense.</li>");
-  });
-});
-
-$(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    const person1Input = $("input#person1").val();
-    const person2Input = $("input#person2").val();
-    const animalInput= $("input#animal").val();
-    const exclamationInput = $("input#exclamation").val();
-    const verbInput = $("input#verb").val();
-    const nounInput = $("input#noun").val();
-
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
-
-    $("#story").show();
-
-    event.preventDefault();
+    $("span").hide();
   });
 });
 

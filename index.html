@@ -10,23 +10,24 @@
   <div class="container">
     <div class="jumbotron">
       <h1>A Robot Speaks</h1>
-      <p>Please, engage Mr. Roboger, creation extraordinaire. He will take whatever number you would like to provide, and say something back to you. He will do his best to say back to you all the same responses plus respond to your most recent input last.</p>
+      <p>Please, engage Mr. Roboger, creation extraordinaire. He will take whatever number you would like to provide, and say something back to you. He will do his best to respond to your most recently entered number last.</p>
     </div>
     <form class="input-group" id="speak">
       <div class="input-group col-md-6">
         <label for="input-group">Speak some robot to Mr. Roboger:</label>
         <div class="input-group-prepend" id="form-buttons">
           <button class="btn btn-primary" type="submit">Speak</button>
-          <button class="btn btn-outline-secondary" type="reset">Reset</button>
+          <button class="btn btn-outline-secondary" type="reset">Clear</button>
         </div>
-        <input type="number" class="form-control" placeholder="012345678901233456789" aria-label="Example arabic numeral to say to Mr. Roboger">
+        <input type="text" class="form-control" placeholder="01234567" aria-label="Example arabic numeral to say to Mr. Roboger">
       </div>
       <div class="output-group mb-3" id="output">
         <div class="output-group-prepend" id="button-history">
           <button class="btn btn-outline-primary" type="submit">show response history</button>
           <button class="btn btn-outline-secondary" type="button" id="hider-button">hide these outputs</button>
         </div>
-        <span class="output-group"></span>
+        <p><span class="output-group user-output"></span></p>
+        <p><span class="output-group robot-output"></span></p>
       </div>
     </form>
   </div>
