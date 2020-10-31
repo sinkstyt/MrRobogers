@@ -1,19 +1,19 @@
 # _Mr. Roboger's Neighborhood_
 
 ### By _**Tyler Sinks**_
-
+![An image of a robot used under Creative Commons license](img/Buck_R.jpeg)
 ### _This Project's Reason for Being and Description_
 _This project functions as a testing ground for applying a few JavaScript devices like arrays and loops_
 * Created October 30, 2020
 * Last major revision happened on October 30, 2020
-* Hopes to take an input number from a user and return one of three possible responses:
+* Hopes to take an input number from a user and return one of four possible responses:
     1. "Beep!"
     2. "Boop!"
     3. "Won't you be my neighbor?"
-* See if you can discern Mr. Roboger's logic just by guessing and checking your input numbers.
-* For a giveaway hint, one might peek at the business and user-interface logic in the scripts.js file.
-![A portion of a screenshot from the Epicodus website describing my particular cohort](img/EpicodusModules.png)
-* initially created in response to a project prompt to be ginned up completely solo and completely within a nine hour window on **"30 October, 2020"**
+    4. A series of three random numbers, each rounded down and between 0 and input
+* Before looking at the js/scripts.js, see if you can discern Mr. Roboger's logic just by guessing and checking your input numbers.
+* If one cannot resist, the business and user-interface logics lay in the js/scripts.js file.
+* initially created in response to a project prompt to be ginned up completely solo and completely within a nine hour window on **30 October, 2020**
 
 ## Setup/Installation Requirements
 
@@ -25,9 +25,9 @@ _This project functions as a testing ground for applying a few JavaScript device
     4a. Perhaps one should make sure that git is installed on one's machine, so as to be able to follow the git prompts for the command line interface below
 
 **Most straightforward way to just see the rendered page:**
-* [click this link](https://sinkstyt.github.io/portfolio-index/index.html) to load the site as it is currently hosted by GitHub Pages
-    * _Should this link fail you in any way, you could alternatively copy and paste the full address below into a web browser's address bar:_
-    #### https://sinkstyt.github.io/portfolio-index/index.html ####
+* [Click this link](https://sinkstyt.github.io/MrRobogers/index.html) to load the site as it is currently hosted by GitHub Pages
+    * _Should this link fail, one could copy and paste the address below into a web browser's address bar:_
+    ### https://sinkstyt.github.io/MrRobogers/index.html ###
 
 ## To Install the Whole Thing Locally
 
@@ -36,13 +36,14 @@ _This project functions as a testing ground for applying a few JavaScript device
 2. Navigate to (or even first _create_) the directory to which you would like to copy the project's files to your machine. _AN EXAMPLE:_
     2a. `$  pwd`
     * > `{Users}\{YOUR_USER_NAME}\`
-    2b. `$  mkdir thisPersonsPortfolioPage`
-    2c. `$  cd thisPersonsPortfolioPage`
-    * > `{Users}\{YOUR_USER_NAME}\thisPersonsPortfolioPage`
-3. Now that you are in the destination directory, pull the files down to your machine from this README's GitHub repository. A suggested series of command line prompts follows by which one might do this:
-    3a. `$~  pwd`
-    * > `{Users}\{YOUR_USER_NAME}\thisPersonsPortfolioPage`
-    3b. `$~  git clone {the_URL_of_my_GitHub_repository_pasted_from_your_clipboard}`[^bignote]
+    2b. `$  mkdir MrRobogersRailroad`
+    2c. `$  cd MrRobogersRailroad`
+    * > `{Users}\{YOUR_USER_NAME}\MrRobogersRailroad`
+3. Now that you are in the destination directory, pull the files down to your machine from this README's GitHub repository. A suggested series of command line prompts follows by which one might do this:      
+      3a. `$~  pwd`
+      * > `{Users}\{YOUR_USER_NAME}\MrRobogersRailroad`
+    
+      3b. `$~  git clone {the_URL_of_my_GitHub_repository_pasted_from_your_clipboard}`[^bignote]
         _Something like this will then be printed to your console:_
         > Cloning into 'live-share'...
         > remote: Enumerating objects: 72, done.
@@ -74,7 +75,7 @@ It will say three numbers from the range of numbers between 0 and the user-input
 
 _I am sure that some of the hypertext links will break within days if not hours._
 _Other than that, I have grave misgivings generally about the overall clunkiness of the page..._
-_Furthermore, {**NONE**} of the specs written above were passing at time of first submission (about 4:45 PM Pacific Time, 30 October, 2020)_
+_Furthermore, seven out of the seven test specs written above were passing at time of first submission (about 5:01 PM Pacific Time, 30 October, 2020)_
 
 ## Support and Contact Details
 
@@ -95,4 +96,4 @@ Copyright (c) 2020 **_Tyler Sinks_**
 [^bignote]: If you're having trouble finding that nice green "Code" button:
     * a .png of it at time of README writing is this: ![the green Code button seen near the top right of any repository hosted on GitHub](img/greenCodeButton.png)
     * Alternatively &mdash; should you not be able to use this button to load this project's URL to your clipboard &mdash; I give the URL to you here as well:
-    https://github.com/sinkstyt/portfolio-index.git
+    https://github.com/sinkstyt/MrRobogers.git
