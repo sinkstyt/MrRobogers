@@ -1,0 +1,33 @@
+body {
+  font-family: 'Syne Mono', monospace;
+}
+.jumbotron {
+  font-family: 'Major Mono Display', monospace;
+  background-color: crimson;
+  color: ivory;
+}
+h1 .jumbotron {
+  font-size: 62pt;
+  font-weight: 600;  
+}
+p .jumbotron {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.click-counter {
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.spoken-count {
+  font-size: 2.5rem;
+  font-weight: 600;
+  border: double darkgoldenrod;
+  border-radius: 10%;
+}
+/* Applies to reset, show response history, and hide outputs buttons: */
+.btn-outline-primary, .btn-outline-secondary {
+  clear: both;
+  display: block;
+}
