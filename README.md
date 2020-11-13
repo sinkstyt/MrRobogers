@@ -5,7 +5,7 @@
 ### _This Project's Reason for Being and Description_
 _This project functions as a testing ground for applying a few JavaScript devices like arrays and loops_
 * Created October 30, 2020
-* Last major revision happened on October 30, 2020
+* Last major revision happened on 13 November, 2020
 * Hopes to take an input number from a user and return one of four possible responses:
     1. "Beep!"
     2. "Boop!"
@@ -32,13 +32,15 @@ _This project functions as a testing ground for applying a few JavaScript device
 ## To Install the Whole Thing Locally
 
 **Let's Call This: "To Take the `git` Route"**
-1. Launch your terminal application (Terminal.app comes installed as default in the Mac OS since... I'm not sure when.)
-2. Navigate to (or even first _create_) the directory to which you would like to copy the project's files to your machine. _AN EXAMPLE:_
+1. Launch your terminal application (eg. Terminal.app if reading this from a macOS environment.)
+2. Create the directory to which you would like to copy the project's files to your machine. _AN EXAMPLE:_
     2a. `$  pwd`
-    * > `{Users}\{YOUR_USER_NAME}\`
-    2b. `$  mkdir MrRobogersRailroad`
-    2c. `$  cd MrRobogersRailroad`
+    * > `{Users}/{YOUR_USER_NAME}/`
+   
+    2b. `$  mkdir MrRobogersRailroad`  // makes a directory at {Users}/{YOUR_USER_NAME}/MrRobogersRailroad
+    2c. `$  cd MrRobogersRailroad`    // changes your present working directory to the directory you have just made
     * > `{Users}\{YOUR_USER_NAME}\MrRobogersRailroad`
+
 3. Now that you are in the destination directory, pull the files down to your machine from this README's GitHub repository. A suggested series of command line prompts follows by which one might do this:      
       3a. `$~  pwd`
       * > `{Users}\{YOUR_USER_NAME}\MrRobogersRailroad`
@@ -55,7 +57,7 @@ _This project functions as a testing ground for applying a few JavaScript device
 4. Now you've got somebody's project (mine, in this case) in that local directory. Happy perusing!
 5. **A perusal suggestion** Use that command line, now that you're in the root folder for this project anyway, to launch your editor of choice (example, Visual Studio Code):
     `code .`
-    > this should launch a new window in VS Code open to the root folder of the directory. Of course some unique system or user profile settings may be pointint you to an error message at this point. For help on this, _Stick with it! We're almost there!_ please check out the documentation appropriate to this error/your text editor of choice's command prompts.
+    > this should launch a new window in VS Code open to the root folder of the directory. Of course some unique system or user profile settings may instead give an error message at this point. For help on this, _Stick with it! We're almost there!_ please check out the documentation appropriate to this error/your text editor of choice's command prompts.
 
 ## Specs
 
@@ -69,13 +71,13 @@ It will say, "Won't you be my neighbor?" if user input includes a 3.       |    
 It prioritizes the third test above the previous two.       |        | mrRobogerSpeaks(123).toEqual("Won't you be my neighbor?")   
 It prioritizes the second test only above the first.    |      | mrRobogerSpeaks(12).toEqual("Boop!")     
 It will say back to the user all previous responses before also responding to the most recent input.    |      | mrRobogerSpeaks(000).toEqual(...{all previous responses}, {THIS_INPUT'S_RESPONSE})
-It will say three numbers from the range of numbers between 0 and the user-inputted number, selected at random, if no 1, 2, or 3, digits are included in the user input.  |      | mrRobogerSpeaks(75648007).toEqual( [ {RANDOM_NUMBER_WITHIN_RANGE}, {RANDOM_NUMBER_WITHIN_RANGE}, {RANDOM_NUMBER_WITHIN_RANGE} ] )
+For input numbers that are four and higher, it will respond by replacing numbers including 1 or 1s, 2 or 2s, and 3 or 3s as explained above. All other numbers will be returned to the user unchanged but merely increased by one up to and including the user input number.  |      | mrRobogerSpeaks(6).toEqual(0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6)
 
 ## Known Bugs
 
 _I am sure that some of the hypertext links will break within days if not hours._
-_Other than that, I have grave misgivings generally about the overall clunkiness of the page..._
-_Furthermore, seven out of the seven test specs written above were passing at time of first submission (about 5:01 PM Pacific Time, 30 October, 2020)_
+_No known bugs_
+_Furthermore, seven out of the seven test specs written above were passing at time of first submission (about 7:20 AM PST 13 November, 2020)_
 
 ## Support and Contact Details
 
